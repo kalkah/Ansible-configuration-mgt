@@ -11,4 +11,6 @@
 - name: Webserver assignment
   import_playbook: ../static-assignments/webservers.yml
 
-
+-  hosts: db
+- name: Installing db
+  import_playbook: ../static-assignments/db.yml
