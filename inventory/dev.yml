@@ -1,3 +1,7 @@
+roles-feature
+[db]
+172.31.18.162 ansible_ssh_user=ubuntu
+
 #[nfs]
 #172.31.19.83 ansible_ssh_user=ec2-user
 
