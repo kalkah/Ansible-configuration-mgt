@@ -1,5 +1,9 @@
 ---
-- hosts: db
-  roles:
-  - role: geerlingguy.mysql
-    become: yes
+  - hosts: db
+    roles:
+    - role: mysql
+      become: true
+
+# NOTE: To ensure smooth run of the db role, note that the target db is ubuntu, I edited the following files under mysql role:
+# tasks/user.yml
+# defaults/main.yml
